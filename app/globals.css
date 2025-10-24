@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background-color: #0c1b2a;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.mask-gradient {
+  mask-image: radial-gradient(circle at top, black 40%, transparent 75%);
+  -webkit-mask-image: radial-gradient(circle at top, black 40%, transparent 75%);
+}
+
+.soft-grid {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
